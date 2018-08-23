@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css"> -->
     <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script> -->
 </head>
 <body>
 <header>
@@ -131,6 +131,7 @@
                                 <a href="#" class="user_img">
                                     <img src="images/userimg1.jpg"/>
                                 </a>
+                            </dt>
                             <dd class="name">
                                 <a href="#">zhouyong224</a>
                             </dd>
@@ -605,37 +606,105 @@
 </div>
 </body>
 <script>
-    var mySwiper = new Swiper ('.swiper-container', {
-//        direction: 'vertical',
-        loop: true,
-        autoplay:true  ,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable :true,   //设置点击圆点控制图片
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        mousewheel:true,    //设置鼠标滑动图片随之滑动
+//     var mySwiper = new Swiper ('.swiper-container', {
+// //        direction: 'vertical',
+//         loop: true,
+//         autoplay:true  ,
+//         pagination: {
+//             el: '.swiper-pagination',
+//             clickable :true,   //设置点击圆点控制图片
+//         },
+//         navigation: {
+//             nextEl: '.swiper-button-next',
+//             prevEl: '.swiper-button-prev',
+//         },
+//         mousewheel:true,    //设置鼠标滑动图片随之滑动
 
-        // 如果需要滚动条
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-    })
+//         // 如果需要滚动条
+//         scrollbar: {
+//             el: '.swiper-scrollbar',
+//         },
+//     })
 
-    //设置鼠标放在图片轮播停止。
-    document.getElementById("swiper-container").onmouseover=function () {//滑过悬停
-        mySwiper.autoplay.stop();//mySwiper 为上面你swiper实例化的名称
-    }
-    document.getElementById("swiper-container").onmouseout=function () {//滑过悬停
-        mySwiper.autoplay.start();//mySwiper 为上面你swiper实例化的名称
-    }
-    $('.swiper-pagination').on('click','li',function(){
-        var index = this.innerHTML;
-        mySwiper.slideTo(index-1, 500, false);//切换到第一个slide，速度为1秒
-    })
+//     //设置鼠标放在图片轮播停止。
+//     document.getElementById("swiper-container").onmouseover=function () {//滑过悬停
+//         mySwiper.autoplay.stop();//mySwiper 为上面你swiper实例化的名称
+//     }
+//     document.getElementById("swiper-container").onmouseout=function () {//滑过悬停
+//         mySwiper.autoplay.start();//mySwiper 为上面你swiper实例化的名称
+//     }
+//     $('.swiper-pagination').on('click','li',function(){
+//         var index = this.innerHTML;
+//         mySwiper.slideTo(index-1, 500, false);//切换到第一个slide，速度为1秒
+//     })
+var num = 0;
+        var timer;
+        var ul=$("#ul"),left=$("#left"),right=$("#right");
+        var length=$("#ul li").length-1;
+        function autoplay() {
+            timer = setInterval(function () {
+                num++;
+                if (num == length) {
+                    $('ol li').eq(0).addClass('active').siblings('').removeClass('active');
+                }
+                if (num > length) {
+                    setTimeout(function () {
+                        ul.stop().animate({"left": -num * 506})
+                    }, 0.01)
+                    num = 0;
+                    ul.css('left', -506 * num + 'px');
+                    num = 1;
+                }
+                ul.stop().animate({"left": -num * 506});
+                $('ol li').eq(num).addClass('active').siblings('').removeClass('active');
+            }, 3000)
+        }
 
+        autoplay();
+        $(".banner-left").mouseenter(function () {
+            clearInterval(timer);
+            left.show();
+            right.show();
+        })
+        $(".banner-left").mouseleave(function () {
+            autoplay();
+            left.hide();
+            right.hide();
+        })
+
+        $("#right").click(function () {
+            num++;
+            if (num == length) {
+                $('ol li').eq(0).addClass('active').siblings('').removeClass('active');
+            }
+            if (num > length) {
+                setTimeout(function () {
+                    ul.stop().animate({"left": -num * 506})
+                }, 0.01) 
+                num = 0;
+                ul.css('left', -506 * num + 'px');
+                num = 1;
+            }
+            ul.stop().animate({"left": -num * 506});
+            $('ol li').eq(num).addClass('active').siblings('').removeClass('active');
+
+        })
+
+        $('#left').click(function (event) {
+            num = num - 1;
+            if (num < 0) {
+                num = length;
+                ul.css('left', -506 * num + 'px');
+                num = 2;
+            }
+           ul.stop().animate({'left': -506 * num + 'px'});
+            $('ol li').eq(num).addClass('active').siblings('').removeClass('active');
+
+        });
+        $("ol li").click(function () {
+            $(this).addClass('active').siblings('').removeClass('active');
+            num=$(this).index();
+            ul.stop().animate({"left": -num * 506});
+        })
 </script>
 </html>
