@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/recruitment-css.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    	<script src="js/jquery-1.11.0.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    </head>
+    <body>
+		<header>
+    <div  class="container">
+        <ul class="menu-left">
+            <li><a href="index.html" class="logo"><img src="images/logo.png" alt=""></a></li>
+            <li><a href="index.html"> 首页</a></li>
+            <li><a href="blog.html">博客</a></li>
+            <li><a href="college.html">学院</a></li>
+            <li><a href="download.html">下载</a></li>
+            <li><a href="gitchat.html">GitChat</a></li>
+            <li><a href="recruitment.html">招聘</a></li>
+            <li><a href="mall.html">商城</a></li>
+            <li><a href="login.html">VIP</a></li>
+            <li><a href="activity.html">活动</a></li>
+            <li><a href="#">...</a></li>
+        </ul>
+        <div class="menu-right">
+            <li class="position">
+                <input type="text">
+                <i class="fa fa-search fa-fw search"></i>
+            </li>
+            <li class="red"><a href="postedit.html"><i class="fa fa-pencil fa-fw"></i><span>&nbsp;写微博</span></a></li>
+            <li class="red"><a href=""><i class="fa fa-files-o fa-fw"></i><span>&nbsp;发微信</span></a></li>
+            <li class="black"><a href="login.html">登录</a></li>
+            <li class="black"><a href="register.html">注册</a></li>
+        </div>
+    </div>
+</header>
+		<nav>
+				<div class="container">      
+					<div class="navbar">
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">技术问答</a></li>
+							<li><a href="#">JOB</a></li>
+							<li><a href="#">个人主页</a></li>
+							<li><a href="#">消息中心</a></li>
+							<li><a href="#">我的C币</a></li>
+							
+						</ul>
+					</div>
+					<div class="download">
+						<a href="#" class="help"><i class="fa fa-question-circle fa_question"></i>下载帮助</a>
+					</div>
+				</div>
+		</nav>
+
+		<div class="main">
+			<div class="main_top">
+				<div class="main_top_nav">
+					<a href="" class="green">我的工作</a>
+					<a href="">我的简历</a>
+					<a href="">职位广场</a>
+					<a href="">企业广场</a>
+					<span><img src="images/peo.png" alt="" width="11px" height="14px">&nbsp&nbsp我要求职</span>
+					<span><img src="images/cou.png" alt="" width="11px" height="14px">&nbsp&nbsp我要招聘</span>
+				</div>
+				<div class="main_top_logo" >
+					
+				</div>
+				<div class="main_top_search">
+					<div class="main_top_s_m">
+						<p>职位</p>
+						<input type="text" placeholder="&nbsp&nbsp&nbsp&nbsp可按职位或公司关键词搜索职位">
+						<span>搜索职位</span>
+						<a href="">薪资范围</a>
+						<a href="">地区范围</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="main_bottom">
+				<div class="main_bottom_left">
+					<div class="wrap">
+		    			<ul id="choose">
+					    <li>最新职位</li>
+
+						<li>移动开发
+		                    <div class="second_meau">
+		                        <a href="">ios</a>
+		                        <a href="">Android</a>
+		                        <a href="">WP</a>
+		                    </div>
+		                </li>
+
+						<li>前端开发
+		                    <div class="second_meau">
+		                        <a href="">Web前端</a>
+		                        <a href="">HTML5</a>
+		                        <a href="">JavaScript</a>
+		                        <a href="">HTML</a>
+		                        <a href="">Flash</a>
+		                    </div>
+		                </li>
+						<li>后端开发
+		                    <div class="second_meau">
+		                        <a href="">Java</a>
+		                        <a href="">PHP</a>
+		                        <a href="">C++</a>
+		                        <a href="">C#</a>
+		                        <a href="">Ruby</a>
+		                        <a href="">Python</a>
+		                        <a href="">VB</a>
+		                        <a href="">Node.js</a>
+		                        <a href="">Perl</a>
+		                        <a href="">Go</a>
+		                        <a href="">Delphi</a>
+		                    </div>
+		                </li>
+						<li>数据库
+		                    <div class="second_meau">
+		                        <a href="">MySQL</a>
+		                        <a href="">Oracle</a>
+		                        <a href="">SqlServer</a>
+		                        <a href="">MONGODB</a>
+		                        <a href="">DB2</a>
+		                        <a href="">ETL</a>
+		                        <a href="">NoSQL</a>
+		                    </div>
+		                </li>
+						<li>云计算/大数据
+		                    <div class="second_meau">
+		                        <a href="">Hadoop</a>
+		                        <a href="">Yarn</a>
+		                        <a href="">Spark</a>
+		                        <a href="">云存储</a>
+		                        <a href="">虚拟化</a>
+		                        <a href="">IaaS</a>
+		                        <a href="">Paas</a>
+		                        <a href="">SaaS</a>
+		                        <a href="">Hive</a>
+		                    </div>
+		                </li>
+						<li>算法及医用
+		                    <div class="second_meau">
+		                        <a href="">广告算法</a>
+		                        <a href="">图像梳理算法</a>
+		                        <a href="">推荐算法</a>
+		                        <a href="">数据挖掘</a>
+		                        <a href="">机器学习</a>
+		                        <a href="">自然语言处理</a>
+		                        <a href="">搜索引擎</a>
+		                        <a href="">用户行为分析</a>
+		                        <a href="">商业智能</a>
+		                        <a href="">数据仓库</a>
+		                        <a href="">决策支持(DSS)</a>
+		                        <a href="">在线分析处理(OLAP)</a>
+		                    </div>
+		                </li>
+						<li>运维
+		                    <div class="second_meau">
+		                        <a href="">运维工程师</a>
+		                        <a href="">网络工程师</a>
+		                        <a href="">系统工程师</a>
+		                        <a href="">安全工程师</a>
+		                        <a href="">Web安全</a>
+		                        <a href="">网络安全</a>
+		                        <a href="">系统安全</a>
+		                        <a href="">IT支持</a>
+		                        <a href="">IDC</a>
+		                        <a href="">CDN</a>
+		                    </div>
+		                </li>
+						<li>测试
+		                    <div class="second_meau">
+		                        <a href="">测试工程师</a>
+		                        <a href="">自动化测试</a>
+		                        <a href="">功能测试</a>
+		                        <a href="">性能测试</a>
+		                        <a href="">游戏测试</a>
+		                        <a href="">移动应用App测试</a>
+		                        <a href="">Web测试</a>
+		                        <a href="">手机测试</a>
+		                        <a href="">IC测试</a>
+		                        <a href="">硬件测试</a>
+		                        <a href="">系统测试</a>
+		                        <a href="">白盒测试</a>
+		                        <a href="">黑盒测试</a>
+		                        <a href="">灰盒测试</a>
+		                    </div>
+		                </li>
+						<li>企业软件
+		                    <div class="second_meau">
+		                        <a href="">软件产品开发</a>
+		                        <a href="">软件产品实施</a>
+		                        <a href="">售前工程师</a>
+		                        <a href="">售后工程师</a>
+		                        <a href="">系统集成工程师</a>
+		                        <a href="">配置管理</a>
+		                    </div>
+		                </li>
+						<li>电子
+		                    <div class="second_meau">
+		                        <a href="">IC设计</a>
+		                        <a href="">PCB布线</a>
+		                        <a href="">MCU开发</a>
+		                        <a href="">DSP开发</a>
+		                        <a href="">FPGA</a>
+		                        <a href="">电气线路</a>
+		                        <a href="">电源设计</a>
+		                        <a href="">无线射频</a>
+		                        <a href="">通信协议</a>
+		                        <a href="">驱动开发</a>
+		                        <a href="">系统设计及集成</a>
+		                        <a href="">嵌入式开发</a>
+		                        <a href="">工艺工程</a>
+		                        <a href="">FAE/AE</a>
+		                    </div>
+		                </li>
+						<li>管理
+		                    <div class="second_meau">
+		                        <a href="">项目经理</a>
+		                        <a href="">测试经理</a>
+		                        <a href="">运维经理</a>
+		                        <a href="">安全专家</a>
+		                        <a href="">系统架构师</a>
+		                    </div>
+		                </li>
+						<li>其他
+		                    <div class="second_meau">
+		                       <a href="">产品经理</a>
+		                       <a href="">UI/UE</a>
+		                    </div>
+		                </li>
+		    			</ul>
+    				</div>
+				</div>
+				<div class="main_bottom_right">
+					<ul>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<li>
+							<div><img src="images/rc07.jpg" alt="" height="45px" width="60px"><strong class="p1">算法工程师</strong>
+							</div>
+							<a href="">北京哥大诺博教育有限公司</a>
+							<p>15-30K/月</p>
+							<b>2018-06-13更新</b>
+							<button>我要应聘</button>
+						</li>
+						<div class="ulbottom">点击查看更多职位</div>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="advertising">
+			<div class="ad_top">
+				<div class="ad_t_h">明星企业</div>
+				<ul>
+					<li><img src="images/rc01.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc02.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc03.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc04.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc05.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc06.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc07.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc08.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc09.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc10.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc11.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc12.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc13.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc14.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc15.jpg" alt="" width="124px" height="88px"></li>
+					<li><img src="images/rc16.jpg" alt="" width="124px" height="88px"></li>
+				</ul>
+			</div>
+
+			<div class="ad_bottom">
+			</div>
+			
+		</div>
+
+		<div class="footer">
+			<div class="footer_content">
+				<div class="footer_c_first">
+					<a href="">公司简介</a><span></span>
+					<a href="">招贤纳士</a><span></span>
+					<a href="">广告服务</a><span></span>
+					<a href="">联系方式</a><span></span>
+					<a href="">版权声明</a><span></span>
+					<a href="">法律顾问</a><span></span>
+					<a href="">问题报告</a><span></span>
+					<a href="">合作伙伴</a><span></span>
+					<a href="">论坛反馈</a>
+				</div>
+				<div class="footer_c_second">
+					<span class="pic"><img src="images/qq_icon.png" alt="" ></span>
+					<a href="">网站客服</a>
+					<span class="pic"><img src="images/qq_icon.png" alt=""></span>
+					<a href="">杂志客服</a>
+					<span class="pic"><img src="images/weibo_icon.png" alt=""></span>
+					<a href="">微博客服</a>
+					<span class="pic"><img src="images/mail_icon.png" alt=""></span>
+					<a href="">webmaster@csdn.net</a>
+					<span class="pic"><img src="images/phone_icon.png" alt=""></span>
+					<a href="">400-600-0108</a>
+					<span class="line"></span>
+					<a href="">北京创新乐知信息技术有限公司 版权所有</a>
+					<span class="line"></span>
+					<a href="">江苏知之为计算机有限公司</a>
+					<span class="line"></span>
+					<a href="">江苏乐知网络技术有限公司</a>
+				</div>
+					<div class="footer_c_third">
+						<p>京 ICP 证 09002463 号</p>
+						<span class="pic1"></span>
+						<p>Copyright © 1999-2018, CSDN.NET, All Rights Reserved</p>
+						<span class="pic2"><img src="images/gongshang_logos.gif" alt=""></span>
+
+					</div>
+
+			</div>
+		</div>
+
+
+		<script>
+            $('#choose').children('li').mouseenter(function(event) {
+               $(this).children('div').addClass('show');
+               
+            });
+            $('#choose').children('li').mouseleave(function(event) {
+               
+               $(this).children('div').removeClass('show');
+            });
+        </script>
+    </body>
+</html>

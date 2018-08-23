@@ -1,0 +1,488 @@
+/*
+* @Author: admin
+* @Date:   2018-06-11 14:02:46
+* @Last Modified by:   admin
+* @Last Modified time: 2018-06-29 10:22:05
+*/
+	*{
+		padding: 0px;
+		margin: 0px;
+	}
+	body{
+		    font-family: 'Microsoft YaHei',Arial;
+	}
+	a{
+		text-decoration: none;
+	}
+	nav{
+	    background: #eaebec;
+	    height: 44px;
+	    border-top: 1px solid #ddd;
+	    border-bottom: 1px solid #ddd;
+        min-width: 1263px;
+	}
+	 nav .container,.dcontent .container{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	nav .navbar{
+		float: left;
+	}
+	nav ul li,nav .download{
+		height: 44px;
+		line-height: 44px;
+	}
+	nav .download{
+		float: right;
+	}
+	nav .download .fa_question{
+		margin-right: 5px;
+	}
+	nav a{
+		color: #4f4f4f;
+	}
+	nav ul li{
+		float: left;
+		list-style: none;
+		text-align: center;
+		margin-right: 32px;
+	}
+	nav ul li a{
+		display: block;
+		font-size: 16px;
+	}
+	nav ul li:hover{
+		border-bottom: 2px solid #c92027;
+	}
+.dcontent{
+	margin-top: 10px;
+}
+.dcontent .content-main{
+	width: 871px;
+	height: 300px;
+	float: left;
+}
+.dcontent .content-right{
+	float: left;
+	margin-left: 20px;
+	width: 308px;
+	height: 250px;
+}
+.dcontent .content-right img{
+	width: 100%;
+}
+.dcontent .content-header{
+	padding: 10px 20px;
+	background: white;
+}
+.dcontent .content-header dl{
+	padding: 10px 0;
+	border-bottom: dashed 1px #e6e6e6;
+	line-height: 20px;
+}
+.dcontent .content-header .content-list:last-child dl{
+	border: none;
+}
+.dcontent .content-header ul{
+	margin-bottom: 10px;
+}
+.dcontent .content-header .content-list a{
+	color:#333;
+}
+.dcontent .content-header .content-list dt,.dcontent .content-header  .content-list dd{
+	float: left;
+}
+.dcontent .content-header  .content-list dt{
+	width: 80px;
+    float: left;
+    font-size: 14px;
+    color: #999;
+}
+.dcontent .content-header  .content-list ul li{
+	float: left;
+    font-size: 14px;
+    color: #546a7e;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.dcontent .content-header  .content-list ul li:first-child{
+	margin-left: 0px;
+}
+.dcontent .content-header  .content-list ul li.active a{
+	color:#c00;
+}
+.dcontent .content-header  .content-list input{
+	width: 616px;
+	height: 28px;
+	padding: 0 10px;
+	margin-right: 20px;
+	background: #f7f8f9;
+	border: 1px solid #eee;
+}
+.dcontent .content-header  .content-list .button{
+	display: inline-block;
+	padding: 0 30px;
+	height: 28px;
+	background: #e33f3f;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	line-height: 28px;
+}
+.dcontent .condition{
+	margin: 20px 10px;
+}
+.dcontent .condition span{
+	font-size: 14px;
+	color: #999;
+}
+.dcontent .condition .condition-list{
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #ec8c8c;
+	margin-right: 10px;
+}
+.dcontent .condition .condition-list em {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #e33f3f;
+	padding: 0px 7px;
+	margin-top: -3px;
+	font-style: unset;
+}
+.dcontent .condition .close {
+	display: inline-block;
+	height: 22px;
+	width: 20px;
+	background: #ec8c8c;
+	margin-top: -5px;
+	text-align: center;
+	cursor: pointer;
+	margin-left: 1px;
+}
+.dcontent .content-content{
+	margin-top: 10px;
+	background: white;
+	padding: 10px 20px;
+	border: 1px solid #eee;
+}
+.dcontent .content-content .content-title{
+	height: 44px;
+	line-height: 44px;
+	margin: 0 -20px;
+	border-bottom: solid 1px #eee;
+	padding: 0 20px;
+}
+.dcontent .content-content .content-title a{
+	display: inline-block;
+	margin-right: 20px;
+	color: #666;
+}
+.dcontent .content-content .content-title .active{
+	color: #e33f3f;
+	border-bottom: solid 2px #e33f3f;
+}
+.dcontent .content-content .content-detail{
+	border-bottom: dashed 1px #e6e6e6;
+}
+.dcontent .content-content .content-detail dl{
+	padding: 15px 0;
+}
+.dcontent .content-content .content-detail:last-child{
+	border: none;
+}
+.dcontent .content-content .content-detail dt{
+	float: left;
+	margin-right: 25px;
+	width: 45px;
+}
+.dcontent .content-content .content-detail dd{
+	float: left;
+	width: 750px;
+}
+.dcontent .content-content .content-detail p{
+	padding-bottom: 20px;
+	font-size: 12px;
+	color: #666;
+	word-break: break-all;
+}
+.dcontent .content-content .content-detail p:last-child{
+	padding-bottom:0;
+}
+.dcontent .content-content .content-detail  .title a{
+	display: inline-block;
+	font-size: 16px;
+	color: #333;
+	font-weight: 700;
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.dcontent .content-content .content-detail span{
+	margin-right: 20px;
+	color: #888;
+}
+.dcontent .content-content .content-detail span em{
+	color: #333;
+	font-style: unset;
+}
+.dcontent .content-content .content-detail .editor{
+	color: #959db1;
+}
+
+.dcontent .page{
+	background: #fff;
+	padding: 10px 0;
+	border: 1px solid #eee;
+	border-top-width: 0;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.dcontent .page a{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 10px;
+	height: 24px;
+	line-height: 24px;
+	margin-left: 8px;
+	border: 1px solid #eee;
+	font-size: 14px;
+	color: #333;
+}
+.dcontent .page a.active{
+	font-size: 14px;
+	color: #fff;
+	font-weight: 400;
+	background: #e33f3f;
+}
+.dcontent .page a:hover{
+	border: 1px solid #e33f3f;
+}
+.dcontent .content-right .user-info{
+	background: white;
+	border: 1px solid #eee;
+	padding: 0 19px 18px;
+	margin-top: 60px;
+}
+.dcontent .content-right .user-img{
+	height: 100px;
+	width: 100px;
+	background: #eee;
+	border-radius:50%;
+	line-height: 100px;
+	text-align: center;
+	position: relative;
+	margin: -50px auto 0;
+}
+.dcontent .content-right .user-img a{
+	display: block;
+	color: #868b96;
+}
+.dcontent .content-right h4 {
+	padding: 10px 0 5px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #868b96;
+	text-align: center;
+	margin: 10px 0 20px;
+	font-weight: normal;
+}
+.dcontent .content-right .user-sign{
+	padding-top: 20px;
+	border-top: 1px solid #eee;
+	margin-bottom: 25px;
+}
+.dcontent .content-right .user-sign a{
+	display: inline-block;
+	width: 262px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #e82a2a;
+	border-radius: 5px;
+	text-align: center;
+}
+.dcontent .new-chat{
+	margin-top: 20px;
+	padding: 0 20px 10px;
+	margin-bottom: 20px;
+	background: white;
+}
+.dcontent .new-chat .title{
+	padding:10px 0 6px;
+	border-bottom: 1px solid #eee;
+}
+.dcontent .new-chat .title span{
+	height: 32px;
+	line-height: 32px;
+	float: left;
+	font-size: 16px;
+}
+.dcontent .new-chat .title  a{
+	float: right;
+	font-size: 14px;
+	line-height: 32px;
+	height: 32px;
+	padding-left: 20px;
+	color: #959db1;
+}
+.dcontent .new-chat .chat-list{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	border-bottom: 1px solid #eee;
+}
+.dcontent .new-chat .chat-list:last-child{
+	border: none;
+}
+.dcontent .new-chat .chat-list .chat-list-tilte{
+
+}
+.dcontent .new-chat .chat-list .chat-list-editor{
+	font-size: 12px;
+	color:#888;
+}
+.dcontent .user-box{
+	padding: 16px 16px;
+	background: #fff;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.dcontent .user-box h3{
+	font-weight: normal;
+	margin-bottom: 35px;
+}
+.dcontent .user-box h3 .line{
+	display: block;
+	width:4px;
+	height: 15px;
+	background: #cf2730;
+	float: left;
+	margin: 0 5px 0 0;
+}
+.dcontent .user-box h3 .text{
+	display: block;
+	float: left;
+	font-size: 16px;
+	color: #2c3033;
+	padding-top: 0px;
+	line-height: 15px;
+}
+.dcontent .user-box h3 a{
+	float: right;
+	font-size: 12px;
+	color: #999;
+}
+
+.dcontent .user-box .user,.user-box .user li{
+	overflow: hidden;
+	margin-bottom: 16px;
+}
+.dcontent .user-box .user .user-image,.user-boxe .user .user-content{
+	float: left;
+}
+.dcontent  .content-aside .user .user-image{
+	width: 64px;
+	height: 48px;
+}
+.dcontent .user-box .user .user-image img{
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+}
+.dcontent .user-box .user .user-content{
+	width: 228px;
+	padding: 0 10px;
+}
+.dcontent .user-box .user .user-content a{
+	font-size: 14px;
+	color: #3d3d3d;
+	cursor: pointer;
+	font-weight: bold;
+}
+.dcontent .user-box .other_company {
+	border-top: 1px solid #e3e3e3;
+	padding-top: 12px;
+}
+.dcontent .user-box  .other_company a {
+	display: block;
+	padding: 4px 0;
+	float: left;
+	margin-right: 12px;
+	font-size: 12px;
+	color: #707070;
+	line-height: 14px;
+	max-width: 205px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.dcontent .user-box .user-contact{
+	margin-bottom: 10px;
+}
+.dcontent .user-box .user1 .user-image{
+	padding: 2px;
+	float: left;
+	display: block;
+	width: 108px;
+	height: 108px;
+	border: 1px solid #ddd;
+	box-shadow: 0 2px 0 0 rgba(0,0,0,0.07);
+	margin-right: 5px;
+}
+.dcontent .user-box .user1 .user-infoation{
+	float: left;
+	width: 152px;
+	height: 100px;
+}
+.dcontent .user-box .user1 .user-infoation h5 {
+	margin-bottom: 12px;
+	font-size: 12px;
+	color: #4f4f4f;
+	line-height: 16px;
+}
+.dcontent .user-box .user1 .user-infoation  a{
+	color: #999;
+}
+.user-box .user1 .user-infoation p{
+	margin: 2px 0;
+}
+.dcontent  .user-info-box{
+	padding: 0 20px;
+	background: #fafafa;
+	border-radius: 3px;
+}
+.dcontent  .user-info-box p a{
+	line-height: 24px;
+	font-size: 12px;
+	color: #999;
+}
+.dcontent  .user_company {
+	padding: 11px 0;
+	clear: both;
+	overflow: hidden;
+	text-align: left;
+	font-size: 14px;
+	color: #999;
+	border-bottom: 1px solid #e3e3e3;
+}
+.dcontent   .user_company a {
+	clear: both;
+	overflow: hidden;
+	font-size: 14px;
+	color: #999;
+}
+.dcontent  .user_company span{
+	font-size: 16px;
+	margin-right: 25px;
+}
+.dcontent .user_company span:last-child{
+	margin-right: 0px;
+}

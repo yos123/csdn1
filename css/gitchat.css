@@ -1,0 +1,427 @@
+/*
+* @Author: admin
+* @Date:   2018-06-12 10:17:35
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-06-28 23:55:59
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix:after{
+    content:".";
+    height:0;
+    visibility:hidden;
+    display:block;
+    clear:both;
+}
+body {
+    min-width: 1116px;
+    line-height: 24px;
+    font-size: 16px;
+    background: #f5f6f7;
+    /* background: #d6b2de; */
+}
+header{
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    color: #333;
+    width: 100%;
+    min-width: 1200px;
+}
+header .container{
+    width: 1200px;
+    margin: 0 auto;
+}
+header .menu-left{
+    float: left;
+    line-height: 70px;
+}
+header .menu-left li{
+     float: left;
+    height: 70px;
+    line-height: 70px;
+    margin-right: 20px;
+    position: relative;
+    width: 80px;
+}
+header .menu-left li::before{
+    content: '';
+    height: 4px;
+    /* width: 50px; */
+    width: 80px;
+    position: absolute;
+    top: 68px;
+    background: transparent;
+}
+header .menu-left li:hover::before,header .menu-left li:nth-child(2)::before{
+    background: #646464;
+}
+header .menu-left li:first-child::before{
+    background: transparent;
+}
+header .menu-left li a{
+    padding: 0 12px;
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    display: block;
+    height: 70px;
+}
+header .menu-left li a:hover{
+    color: #c92027;
+}
+header .menu-left .logo img{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+header .menu-right{
+    float: right;
+}
+header .menu-right li{
+    float: left;
+    padding: 0 15px;
+    height: 71px;
+    line-height: 71px;
+}
+header .menu-right li a{
+    font-size: 14px;
+    color: #999;
+    vertical-align: 4px;
+    height: 35px;
+    padding: 0px 20px;
+    border: 1px solid #d1d1d1;
+    display: inline-block;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 17px;
+    border-radius: 25px;
+}
+header .menu-right .red a:hover span{
+    color: #c92027;
+}
+header .menu-right .black a :hover span{
+    color: #4f4f4f;
+}
+
+.content{
+    margin: 10px auto;
+}
+.content .container{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content .content-main{
+    width: 800px;
+    float: left;
+    margin-right: 10px;
+    background: white;
+}
+.content-right{
+    width: 387px;
+    float: left;
+}
+.content-main .banner{
+    width: 800px;
+    height: 325px;
+}
+.content-main .banner img{
+    width: 100%;
+}
+.content-main .title{
+    overflow: hidden;
+    height: 50px;padding: 0 25px;
+    line-height: 50px;
+    border: 1px solid #f5f5f5;
+}
+.content-main .title .new{
+    float: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+}
+.content-main .title .more{
+    float: right;
+    font-size: 16px;
+    color:#555;
+}
+.content-main .title .more span:first-child{
+    color: #c93;
+}
+.content-main .title .more span{
+    margin-right: 15px;
+}
+.content-main .main{
+    padding: 10px 25px 0 25px;
+}
+.content-main .main .content-list{
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+.content-main .main .content-list .user{
+    float: left;
+    height: 55px;
+    width: 55px;
+    margin-right: 10px;
+}
+.content-main .main .content-list .user img{
+    width: 55px;
+    height: 55px;
+    border-radius: 2px;
+}
+.content-main .main .content-list .work{
+    float: left;
+    flex: 1;
+    height: 55px;
+    width: 680px;
+}
+.content-main .main .content-list .work1{
+    margin-top: 4px;
+    font-size: 17px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000;
+}
+.content-main .main .content-list .work2 span:nth-child(2){
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #898989;
+    word-wrap: break-word;
+}
+.content-main .main .content-list .work2 span:first-child{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    color: #036eb9;
+}
+
+.content-main .main .content-list .detail{
+    margin-top: 10px;
+}
+.content-main .main .content-list .detail span{
+    margin-right: 10px;
+    color:#777;
+}
+.content-main .main .content-list .list-header{
+    overflow: hidden;
+}
+.content-main .main .content-list .detail .cicle{
+    border: 1px solid #adadad;
+    line-height: 16px;
+    padding: 1px 4px;
+    border-radius: 4px ;
+}
+.content-main .main .content-list .detail .green{
+    background-color: #6e8b84;
+    color: #ffffff;
+}
+.content-main .main .content-list .detail .free{
+    background-color: #c9a063;
+    color: #ffffff;
+}
+.content-right .vip{
+    width: 387px;
+    background: white;
+}
+.content-right .vip-list{
+    padding: 20px;
+    text-align: center;
+    color: #CAA56A;
+}
+.content-right .vip ul{
+    overflow: hidden;
+}
+.content-right .vip ul li{
+    float: left;
+    width: 77px;
+    height: 110px;
+    margin-right: 10px;
+}
+.content-right .vip ul li:last-child{
+    margin-right: 0px;
+}
+.content-right .vip ul li img{
+    width: 50px;
+    height: 50px;
+}
+.content-right .vip .becomevip{
+    text-align: center;
+    border-top: 1px solid #f5f5f5;
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.content-right .vip .becomevip a{
+    color: #CAA56A;
+}
+
+.content-right .information{
+    margin-top: 20px;    
+    background: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.content-right .information ul{
+    overflow: hidden;
+}
+.content-right .information ul li{
+    height: 40px;
+    display: inline-block;
+    float: left;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+       min-width: 142px;;
+    color: #777;
+}
+.content-right .information li img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 6px;
+    margin-right: 7px;
+    border-radius:2px;
+}
+
+.user-box{
+    padding: 16px 16px;
+    background: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.user, .user li{
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+ .user .user-image,.user .user-content{
+    float: left;
+}
+.user .user-image{
+    width: 64px;
+    height: 48px;
+}
+.user .user-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.user .user-content{
+    width: 228px;
+    padding: 0 10px;
+}
+.user .user-content a{
+    font-size: 14px;
+    color: #3d3d3d;
+    cursor: pointer;
+    font-weight: bold;
+}
+.other_company {
+    border-top: 1px solid #e3e3e3;
+    padding-top: 12px;
+}
+.other_company a {
+    display: block;
+    padding: 4px 0;
+    float: left;
+    margin-right: 12px;
+    font-size: 12px;
+    color: #707070;
+    line-height: 14px;
+    max-width: 205px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+ .user-contact{
+    margin-bottom: 10px;
+}
+.user1 .user-image{
+    padding: 2px;
+    float: left;
+    display: block;
+    width: 108px;
+    height: 108px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.07);
+    margin-right: 5px;
+}
+.user1 .user-infoation{
+    float: left;
+    width: 152px;
+    height: 100px;
+}
+.user1 .user-infoation h5 {
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: #4f4f4f;
+    line-height: 16px;
+}
+ .user1 .user-infoation  a{
+    color: #999;
+}
+.user1 .user-infoation p{
+    margin: 2px 0;
+}
+ .user-info-box{
+    padding: 0 20px;
+    background: #fafafa;
+    border-radius: 3px;
+}
+ .user-info-box p a{
+    line-height: 24px;
+    font-size: 12px;
+    color: #999;
+}
+ .user_company {
+    padding: 11px 0;
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+    font-size: 14px;
+    color: #999;
+    border-bottom: 1px solid #e3e3e3;
+}
+ .user_company a {
+    clear: both;
+    overflow: hidden;
+    font-size: 14px;
+    color: #999;
+}
+ .user_company span{
+    font-size: 16px;
+    margin-right: 25px;
+}
+.user_company span:last-child{
+    margin-right: 0px;
+}
+
+.btn-chat{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    line-height: 26px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    border: none;
+    border-radius: 6px;
+}

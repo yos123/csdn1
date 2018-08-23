@@ -1,0 +1,120 @@
+/*
+* @Author: admin
+* @Date:   2018-06-11 14:06:43
+* @Last Modified by:   admin
+* @Last Modified time: 2018-06-29 10:30:52
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix:after{
+    content:".";
+    height:0;
+    visibility:hidden;
+    display:block;
+    clear:both;
+}
+body {
+    min-width: 1263px;
+    line-height: 24px;
+    font-size: 16px;
+    background: #f5f6f7;
+    font-family: 'Microsoft YaHei',Arial;
+}
+header{
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+    color: #333;
+    width: 100%;
+    min-width: 1263px;
+}
+header .container{
+    /* width: 1301px; */
+    margin: 0 auto;
+}
+header .menu-left{
+    float: left;
+    line-height: 50px;
+}
+header .menu-left li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+header .menu-left li a{
+    padding:0 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #3f3f3f;
+}
+header .menu-left li a:hover{
+    color: #c92027;
+}
+header .menu-left .logo img{
+    margin-top:13px;
+}
+header .menu-right{
+    float: right;
+}
+header .menu-right li{
+    float: left;
+    padding: 0 15px;
+    height: 51px;
+    line-height: 51px;
+}
+header .menu-right .position{
+    position: relative;
+}
+header .menu-right .search{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    color:#cccdcc;
+    font-size: 16px;
+}
+header .menu-right input{
+    background-color: #fafafa;
+    font-size: 14px;
+    color: #778087;
+    display: block;
+    width: 140px;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    outline: none;
+    margin-top: 8px;
+}
+header .menu-right li a{
+    font-size: 14px;
+    color: #999;
+    vertical-align: 4px;
+}
+header .menu-right .red a:hover span{
+    color: #c92027;
+}
+header .menu-right .black a :hover span{
+    color: #4f4f4f;
+}
+.back-top{
+    display: none;
+    position: fixed;
+    right: 0px;
+    bottom: 40px;
+    height: 44px;
+    width: 44px;
+    background: #ccc;
+    line-height: 44px;
+    text-align: center;
+}
+.back-top img{
+    width: 20px;
+}

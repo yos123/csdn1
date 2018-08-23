@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/gitchat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+</head>
+<body>
+<header>
+    <div  class="container">
+        <ul class="menu-left">
+            <li><a href="index.html" class="logo"><img src="images/gclogo.png" alt=""></a></li>
+            <li><a href="#"> 首页</a></li>
+            <li><a href="#">达人课</a></li>
+            <li><a href="#">专 题</a></li>    
+            <li><a href="#">极客书</a></li>  
+            <li><a href="#">会员</a></li> 
+                </ul>
+        <div class="menu-right">
+        <ul>
+            <li class="red"><a href="postedit.html"><span>发布chat</span></a></li>
+            <li class="red"><a href=""><span>写作</span></a></li>
+            <li class="black"><a href="login.html">登录/注册</a></li>
+        </ul>
+        </div>
+    </div>
+</header>
+
+<div class="content clearfix">
+    <div class="container">
+        <div class="content-main">
+            <div class="banner">
+                <div class="banner-left swiper-container swiper-mywrap" id="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide img1">
+                            <img src="images/banner1.png" alt="">
+                        </div>
+                        <div class="swiper-slide img2">
+                            <img src="images/banner2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide img3">
+                            <img src="images/banner3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="title">
+                <div class="new"><span>最新</span></div>
+                <div class="more"><span>最热</span><span>最新</span>    <span>免费</span></div>
+            </div>
+            <div class="main">
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">HBase 性能分析</p>
+                            <p class="work2"><span>D_MAN</span><span>大数据</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span><i class="fa fa-user"></i> 2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser1" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">从资源爬取到个人微信公众号开发：使用 Python 打造公众号电影搜索器</p>
+                            <p class="work2"><span>凌顺</span><span>编程应用实战</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span><i class="fa fa-user"></i> 2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+                            <span class="cicle free">免费</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser2" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">物联网 NodeMCU：AT 篇</p>
+                            <p class="work2"><span>州的先生</span><span>编程应用实战</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span><i class="fa fa-user"></i> 2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+                            <span class="cicle free">免费</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">旷视科技：计算机视觉如何赋能身份验证场景</p>
+                            <p class="work2"><span>D_MAN</span><span>大数据</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                           <span><i class="fa fa-user"></i> 2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">HBase 性能分析</p>
+                            <p class="work2"><span>D_MAN</span><span>大数据</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span><i class="fa fa-user"></i> 2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser1" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">从资源爬取到个人微信公众号开发：使用 Python 打造公众号电影搜索器</p>
+                            <p class="work2"><span>凌顺</span><span>编程应用实战</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span><i class="fa fa-user"></i> 2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+                            <span class="cicle free">免费</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser2" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">物联网 NodeMCU：AT 篇</p>
+                            <p class="work2"><span>州的先生</span><span>编程应用实战</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span><i class="fa fa-user"></i> 2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+                            <span class="cicle free">免费</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">旷视科技：计算机视觉如何赋能身份验证场景</p>
+                            <p class="work2"><span>D_MAN</span><span>大数据</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span><i class="fa fa-user"></i> 2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">HBase 性能分析</p>
+                            <p class="work2"><span>D_MAN</span><span>大数据</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span>2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser1" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">从资源爬取到个人微信公众号开发：使用 Python 打造公众号电影搜索器</p>
+                            <p class="work2"><span>凌顺</span><span>编程应用实战</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span>2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+                            <span class="cicle free">免费</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser2" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">物联网 NodeMCU：AT 篇</p>
+                            <p class="work2"><span>州的先生</span><span>编程应用实战</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span>2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+                            <span class="cicle free">免费</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="list-header">
+                        <div class="user">
+                            <img src="images/gcuser" alt="">
+                        </div>
+                        <div class="work">
+                            <p class="work1">旷视科技：计算机视觉如何赋能身份验证场景</p>
+                            <p class="work2"><span>D_MAN</span><span>大数据</span></p>
+                        </div>
+                    </div>
+                    <div class="list-footer">
+                        <div class="detail">
+                            <span>2</span>
+                            <span class="cicle">大数据</span>
+                            <span class="cicle green">读者圈</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-right clearfix">
+            <div class="vip">
+                <div class="vip-list">
+                    <ul>
+                        <li>
+                            <img src="images/gcchat.png" alt="">
+                            <p>Chat</p>
+                            <p>免费订</p>
+                        </li>
+                        <li>
+                            <img src="images/gcchat.png" alt="">
+                            <p>Chat</p>
+                            <p>免费订</p>
+                        </li>
+                        <li>
+                            <img src="images/gcchat.png" alt="">
+                            <p>Chat</p>
+                            <p>免费订</p>
+                        </li>
+                        <li>
+                            <img src="images/gcchat.png" alt="">
+                            <p>Chat</p>
+                            <p>免费订</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="becomevip">
+                    <a href="">成为会员</a>
+                </div>
+            </div>
+            <div class="information">
+                <ul>
+                    <li><img src="images/user1.jpg" alt="">
+                    <span>前端</span></li>
+                    <li><img src="images/user2.jpg" alt="">
+                    <span>硬件与物联网</span></li>
+                    <li><img src="images/user3.jpg" alt="">
+                    <span>数学与算法</span></li>
+                    <li><img src="images/userimg1.jpg" alt="">
+                    <span>开源软件</span></li>
+                    <li><img src="images/userimg2.jpg" alt="">
+                    <span>编程语言</span></li>
+                    <li><img src="images/userimg3.jpg" alt="">
+                    <span>软件工程实践</span></li>
+                    <li><img src="images/user1.jpg" alt="">
+                    <span>软件工程实践</span></li>
+                    <li><img src="images/user1.jpg" alt="">
+                    <span>前端</span></li>
+                    <li><img src="images/user2.jpg" alt="">
+                    <span>前端</span></li>
+                    <li><img src="images/user3.jpg" alt="">
+                    <span>写作与翻译</span></li>
+                </ul>
+            </div>
+            <div class="user1 user-box">
+                    <div class="user-contact clearfix">
+                        <div class="user-image"><img src="images/qr-code.png" alt=""></div>
+                        <div class="user-infoation">
+                            <h5>请扫描二维码联系客服</h5>
+                            <p><a href=""><span class="txt">webmaster@csdn.net</span></a></p>
+                            <p><a href=""><span class="txt">400-660-0108</span></a></p>
+                            <p><a href=""><span class="txt">QQ客服 </span></a><span><a href=""><span class="txt">客服论坛</span></a></span></p>
+                        </div>
+                    </div>
+                    <div class="user-info-box clearfix">
+                        <div class="user_company clearfix">
+                            <p><span>关于</span><span>招聘</span><span>广告服务</span><span>百度</span>  </p>
+                            <p><a href="">©1999-2018 CSDN版权所有</a></p>
+                            <p><a href="">京ICP证09002463号</a></p>
+                        </div>
+                        <p><a href="">经营性网站备案信息</a></p>
+                        <p><a href="">网络110报警服务</a></p>
+                        <p><a href="">中国互联网举报中心</a></p>
+                        <p><a href="">北京互联网违法和不良信息举报中心</a></p>
+                    </div>
+            </div>
+            <button class="btn-chat">创建一场 Chat</button>
+            <button class="btn-chat">成为达人课作者 </button>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+//        direction: 'vertical',
+        loop: true,
+        autoplay:true  ,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable :true,   //设置点击圆点控制图片
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        mousewheel:true,    //设置鼠标滑动图片随之滑动
+
+        // 如果需要滚动条
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+    })
+
+    //设置鼠标放在图片轮播停止。
+    document.getElementById("swiper-container").onmouseover=function () {//滑过悬停
+        mySwiper.autoplay.stop();//mySwiper 为上面你swiper实例化的名称
+    }
+    document.getElementById("swiper-container").onmouseout=function () {//滑过悬停
+        mySwiper.autoplay.start();//mySwiper 为上面你swiper实例化的名称
+    }
+    $('.swiper-pagination').on('click','li',function(){
+        var index = this.innerHTML;
+        mySwiper.slideTo(index-1, 500, false);//切换到第一个slide，速度为1秒
+    })
+
+</script>
+</html>

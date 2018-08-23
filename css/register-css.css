@@ -1,0 +1,260 @@
+/*
+* @Author: Administrator
+* @Date:   2018-06-09 22:43:03
+* @Last Modified by:   admin
+* @Last Modified time: 2018-06-19 09:08:38
+*/
+*{
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+}
+html{
+	height:100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	// background: red;
+}
+div{
+	display: block;
+}
+.login_main{
+	height:100%;
+	width: 100%;
+	// background: red;
+	overflow:hidden;
+}
+.login_left{
+	height:100%;
+	width:500px;
+	left: 0px;
+	top: 0px;
+	background: url('../images/register-bg.jpg') no-repeat center;
+	background-size: cover;
+	position: fixed;
+	overflow: hidden;
+	z-index:1;
+	
+}
+.login_left .img_mask{
+	height:100%;
+	width:500px;
+	position:absolute;
+	background:rgba(0,0,0,0.4);
+	left: 0px;
+	top: 0px;
+	z-index: 999;
+}
+.login_left .login_l_c{
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.login_left .login_l_c .login_l_c_h{
+	height:28px;
+	width:436px;
+	color: white;
+	position:absolute;
+	left:33px;
+	top: 37px;
+	
+}
+.login_left .login_l_c .login_l_c_h a{
+	color:white;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 1000;
+	font-style: italic;
+}
+.login_left .login_l_c .login_l_c_f{
+	height:24px;
+	width:347px;
+	color:white;
+	position:absolute;
+	font-size:16px;
+	bottom: 100px;
+	left:33px;
+}
+.login_right{
+	width:100%;
+	height:100%;
+	position:relative;
+	background:white;
+}
+.login_right .log_r_t{
+	height:53px;
+	padding:45px 27px 0 0;
+	width:100%；
+}
+.login_right .log_r_t a{
+	float: right;
+	color:blue;
+}
+.login_right .login_r_c{
+	height:547px;
+	width:100%;
+	padding-left: 700px;
+	
+}
+
+.login_r_c .login_r_c_t{
+	height:36px;
+	width:100%;
+	color:#4f4f4f;
+	font-size:36px;
+}
+
+}
+.login_r_c_c{
+	width:100%;
+	height:511px;
+	
+}
+.login_r_c_c .regist_step{
+	height:29px;
+	width:100%;
+	padding-top:40px;
+	
+}
+.login_r_c_c .regist_step label{
+	width:auto;
+	height:24px;
+	padding-right: 10px;
+	padding-left: 5px;
+	float:left;
+}
+.login_r_c_c .regist_step span{
+	width:24px;
+	height:24px;
+	background:#dddddd;
+	display:inline-block;
+	border-radius: 20px;
+	color:white;
+	text-align: center;
+	line-height: 24px;
+
+}
+.login_r_c_c .regist_step em{
+	color:#99b2d8;
+	font-size:17px;
+	font-style:normal;
+}
+
+.login_r_c_c .regist_step strong{
+	width:4%;
+	height:1px;
+	background:#ddd;
+	margin-top: 10px;
+	float:left;
+}
+.login_r_c_c .regist_step .fcurrent{
+	color:#ff9900;
+}
+.login_r_c_c .regist_step .bcurrent{
+	background:#ff9900;
+}
+.login_r_c_c .offical{
+	height:185px;
+	width:100%;
+	padding-top:20px;
+}
+.login_r_c_c .offical h3{
+	color:#4f4f4f;
+	font-weight:500;
+}.login_r_c_c .offical .offical_c{
+	height:144px;
+	width:100%;
+	padding-top:20px;
+}
+.offical_c .offical_c_l{
+	width:140px;
+	height:140px;
+	border: solid 1px #ccc;
+	// text-align:center;
+	float:left;
+}
+.offical_c .offical_c_l img{
+	display:block;
+	margin:5px 0 0 5px;
+}
+.offical_c .spanb{
+	display:inline-block;
+	width:170px;
+	height:30px;
+	float:left;
+	margin-top:58px;
+	margin-left: 10px;
+	color:#4f4f4f;
+	font-size:14px;
+}
+// .offical_c .spanb p{
+// 	float:left;
+// 	width:auto;
+// 	height:auto;
+// 	margin-right: 8px;
+// }
+.offical_c .spanb .spanc{
+	width:83px;
+	height:30px;
+	border:1px solid #999;
+	border-radius:16px;
+	display:inline-block;
+	color:#4f4f4f;
+	margin-left:0 0 0 8px;
+	text-align:center;
+	line-height:30px;
+
+}
+
+.login_r_c_c .form_style{
+	width:100%;
+	height:176px;
+}
+.login_r_c_c .form_style .input1{
+	margin-top:40px;
+	width:368px;
+	height:48px;
+	display:block;
+	background:#fafafa;
+	border:solid 1px #ddd;
+	border-radius:5px;
+	box-shadow: inset 0 1px 3px 0 #ddd;
+}
+.login_r_c_c .form_style .input2{
+	margin-top:40px;
+	width:368px;
+	height:48px;
+	display:block;
+	color:white;
+	background:#c92027;
+	border:solid 1px #c92027;
+	border-radius:5px;
+	font-size:18px;
+}
+.login_r_c_c .checkcondition{
+	width:100%;
+	height:21px;
+}
+.login_r_c_c .checkcondition span{
+	width:16px;
+	height:16px;
+}
+.login_r_c_c .checkcondition em{
+	font-style:normal;
+	font-size:14px;
+	color:#4f4f4f;
+}
+.login_r_c_c .checkcondition a{
+	color:#439feb;
+}
+
+#login_copyright{
+	width:100%;
+	height:17px;
+	padding-left:700px;
+	margin-top:30px;
+	font-size:12px;
+	color:#999;
+}
